@@ -15,13 +15,13 @@ model = joblib.load("wine_type_prediction.pkl")
 
 st.title("Wine Type Prediction  !")
 
-fixed acidity = st.number_input("Fixed Acidity")
-volatile acidity = st.number_input("Volatile Acidity")
-citric acid = st.number_input("Citric Acid")
-residual sugar = st.number_input("Residual Sugar")
+fixed_acidity = st.number_input("Fixed Acidity")
+volatile_acidity = st.number_input("Volatile Acidity")
+citric_acid = st.number_input("Citric Acid")
+residual_sugar = st.number_input("Residual Sugar")
 chlorides = st.number_input("Chlorides")
-free sulfur dioxide = st.number_input("Free Sulfur Dioxide")
-total sulfur dioxide = st.number_input("Total Sulfur Dioxide")
+free_sulfur_dioxide = st.number_input("Free Sulfur Dioxide")
+total_sulfur_dioxide = st.number_input("Total Sulfur Dioxide")
 density = st.number_input("Density")
 pH = st.number_input("pH")
 sulphates = st.number_input("Sulphates")
@@ -30,13 +30,13 @@ quality = st.number_input("Quality")
 
 
 df = pd.DataFrame({
-    "fixed_acidity": [fixed_acidity],
-    "volatile_acidity": [volatile_acidity],
-    "citric_acid": [citric_acid],
-    "residual_sugar": [residual_sugar],
+    "fixed acidity": [fixed_acidity],
+    "volatile acidity": [volatile_acidity],
+    "citric acid": [citric_acid],
+    "residual sugar": [residual_sugar],
     "chlorides": [chlorides],
-    "free_sulfur_dioxide": [free_sulfur_dioxide],
-    "total_sulfur_dioxide": [total_sulfur_dioxide],
+    "free sulfur dioxide": [free_sulfur_dioxide],
+    "total sulfur dioxide": [total_sulfur_dioxide],
     "density": [density],
     "pH": [pH],
     "sulphates": [sulphates],
